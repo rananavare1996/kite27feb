@@ -25,7 +25,7 @@ public class PinPageTest {
     driver=Browser1.openBrowser();
 	}
 
-	@Test()
+	@Test
 	public void loginvalidcredentialTest() throws EncryptedDocumentException, IOException, InterruptedException {
 		ZerodhaLoginPage zerodhaLoginPage=new ZerodhaLoginPage(driver);
 		String username=Paramtrization.getData("LOGINDATA", 0, 1);
@@ -57,8 +57,13 @@ public class PinPageTest {
          zerodhaHomePage.BuyTataMotorShare();
          zerodhaHomePage.ClickonToggle();
          zerodhaHomePage.ClickonSell();
-         
 	}
+         
+         @Test
+         public void testa() {
+         System.out.println("hello"); 
+        
+    }
 }
 
 
